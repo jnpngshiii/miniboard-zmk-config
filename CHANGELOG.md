@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.1...v0.1.2) (2024-07-21)
+
+
+### Features
+
+* **script:** fix a path bug ([7d0bd54](https://github.com/jnpngshiii/miniboard-zmk-config/commit/7d0bd5430c2af1c6adfb26987358d23af8604906))
+* **script:** update script for auto make keyboards ([ba75b13](https://github.com/jnpngshiii/miniboard-zmk-config/commit/ba75b137239a37902a5917ba04c3aed887499f19))
+
 ## [0.1.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.0...v0.1.1) (2024-07-21)
 
 
