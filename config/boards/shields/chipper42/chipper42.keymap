@@ -9,14 +9,14 @@
 
 /* fix urob */
 #undef  LH1
-#define LH1 LH2
+#define LH1 36
 #undef  LH0
-#define LH0 LH1
+#define LH0 37
 
-#undef  RH1
-#define RH1 RH2
 #undef  RH0
-#define RH0 RH1
+#define RH0 40
+#undef  RH1
+#define RH1 41
 
 /* source the main keymap */
 #include "base.keymap"
