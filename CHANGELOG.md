@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.3...v0.1.4) (2024-07-22)
+
+
+### Bug Fixes
+
+* **chipper42:** fix placeholder ([c74b209](https://github.com/jnpngshiii/miniboard-zmk-config/commit/c74b20918b022624a5c491d41acd8bd355e46fe7))
+
 ## [0.1.3](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.2...v0.1.3) (2024-07-22)
 
 
