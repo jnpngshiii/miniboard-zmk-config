@@ -8,15 +8,15 @@
 #include "../../../zmk-helpers/key-labels/42.h"
 
 /* fix urob */
-#undef  LH0
-#define LH0 LH1
 #undef  LH1
 #define LH1 LH2
+#undef  LH0
+#define LH0 LH1
 
-#undef  RH0
-#define RH0 RH1
 #undef  RH1
 #define RH1 RH2
+#undef  RH0
+#define RH0 RH1
 
 /* source the main keymap */
 #include "base.keymap"
