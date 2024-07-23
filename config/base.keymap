@@ -24,40 +24,40 @@
 #define SHORT_TAP_MS 165
 
 &sl {
-    release-after-ms = <5000>;
+    release-after-ms = <3000>;
     // quick-release;
 };
 
 &sk {
-    release-after-ms = <5000>;
+    release-after-ms = <3000>;
     // quick-release;
 };
 
-#define MAKE_HRM(                         \
-    NAME ,                                \
-    HOLD , TAP                            \
-    )                                     \
-    ZMK_BEHAVIOR(                         \
-        NAME,                             \
-        hold_tap,                         \
-        flavor = "balanced";              \
-        tapping-term-ms = <TAP_MS>;       \
-        quick-tap-ms = <TAP_MS>;          \
-        require-prior-idle-ms = <TAP_MS>; \
-        bindings = <HOLD>, <TAP>;         \
+#define MAKE_HRM(                                         \
+    NAME ,                                                \
+    HOLD , TAP                                            \
+    )                                                     \
+    ZMK_BEHAVIOR(                                         \
+        NAME,                                             \
+        hold_tap,                                         \
+        flavor = "balanced";                              \
+        tapping-term-ms = <TAP_MS>;                       \
+        quick-tap-ms = <TAP_MS>;                          \
+        require-prior-idle-ms = <TAP_MS>;                 \
+        bindings = <HOLD>, <TAP>;                         \
     )
 MAKE_HRM(hold_sk, &sk, &kp)
 
-#define SHIFT_KEY(                                       \
-    NAME       ,                                         \
-    TAP_ACT    , TAP    ,                                \
-    SHIFT_ACT  , TAPTAP                                  \
-    )                                                    \
-    ZMK_BEHAVIOR(                                        \
-        NAME,                                            \
-        mod_morph,                                       \
-        bindings = <&TAP_ACT TAP> , <&SHIFT_ACT TAPTAP>; \
-        mods = <(MOD_LCTL)>;                             \
+#define SHIFT_KEY(                                        \
+    NAME       ,                                          \
+    TAP_ACT    , TAP    ,                                 \
+    SHIFT_ACT  , TAPTAP                                   \
+    )                                                     \
+    ZMK_BEHAVIOR(                                         \
+        NAME,                                             \
+        mod_morph,                                        \
+        bindings = <&TAP_ACT TAP> , <&SHIFT_ACT TAPTAP>;  \
+        mods = <(MOD_LCTL)>;                              \
     )
 
 #define TAP_TAP(                                          \
@@ -141,6 +141,16 @@ ZMK_BEHAVIOR(mm_a, mod_morph,
 // <C-e>: <END>
 ZMK_BEHAVIOR(mm_e, mod_morph,
     bindings = <&kp E>, <&kp END>;
+    mods = <(MOD_LCTL)>;
+)
+// <C-q>: <Page Up>
+ZMK_BEHAVIOR(mm_e, mod_morph,
+    bindings = <&kp Q> <&kp PG_UP>;
+    mods = <(MOD_LCTL>);
+)
+// <C-s>: <Page Down>
+ZMK_BEHAVIOR(mm_e, mod_morph,
+    bindings = <&kp S>, <&kp PG_DN>;
     mods = <(MOD_LCTL)>;
 )
 
