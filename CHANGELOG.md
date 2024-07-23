@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.5...v0.2.0) (2024-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* move ctrl keys to layer `FOO`
+
+### Features
+
+* move ctrl keys to layer `FOO` ([d104f54](https://github.com/jnpngshiii/miniboard-zmk-config/commit/d104f54a915792f2050f0521f6caefcafc69a4bf))
+
 ## [0.1.5](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.4...v0.1.5) (2024-07-23)
 
 
