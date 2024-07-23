@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.4...v0.1.5) (2024-07-23)
+
+
+### Features
+
+* update ([875009d](https://github.com/jnpngshiii/miniboard-zmk-config/commit/875009ddde79cdfee4bedc98718e033c949d48c8))
+
 ## [0.1.4](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.3...v0.1.4) (2024-07-22)
 
 
