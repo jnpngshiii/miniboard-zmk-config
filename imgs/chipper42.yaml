@@ -3,26 +3,26 @@ layers:
   - ''
   - Q
   - W
-  - {t: E, s: END}
+  - E
   - R
   - ''
   - ''
   - U
-  - {t: I, s: TAB}
+  - I
   - O
-  - {t: P, s: UP}
+  - P
   - ''
   - ''
-  - {t: A, h: LGUI, s: HOME}
+  - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT, s: RIGHT}
+  - {t: F, h: LSHFT}
   - ''
   - ''
   - {t: T, h: LSHFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
-  - {t: J, h: LGUI, s: RET}
+  - {t: J, h: LGUI}
   - ''
   - ''
   - Z
@@ -31,7 +31,7 @@ layers:
   - V
   - ''
   - ''
-  - {t: H, s: BSPC}
+  - H
   - ''
   - ''
   - ''
@@ -40,7 +40,7 @@ layers:
   - {t: C, h: '2'}
   - ''
   - ''
-  - {t: N, h: '3', s: DOWN}
+  - N
   - {t: M, h: '4'}
   '1':
   - ''
@@ -87,6 +87,28 @@ layers:
   - ;
   '2':
   - ''
+  - PG UP
+  - ''
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - ''
+  - UP
+  - ''
+  - ''
+  - {t: HOME, h: LGUI}
+  - {t: PG DN, h: LALT}
+  - {t: ESC, h: LCTRL}
+  - {t: RIGHT, h: LSHFT}
+  - ''
+  - ''
+  - {t: LEFT, h: LSHFT}
+  - {t: '0', h: LCTRL}
+  - {t: '0', h: LALT}
+  - {t: ENTER, h: LGUI}
   - ''
   - ''
   - ''
@@ -95,29 +117,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BSPC
   - ''
   - ''
   - ''
@@ -126,7 +126,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - DOWN
   - {t: ▽, type: trans}
   '3':
   - ''
@@ -169,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '4':
   - ''
@@ -191,7 +191,7 @@ layers:
   - NEXT
   - ''
   - ''
-  - PG UP
+  - ''
   - ''
   - ''
   - Gui+Ctl+ Q
@@ -203,7 +203,7 @@ layers:
   - PREV
   - ''
   - ''
-  - PG DN
+  - ''
   - ''
   - ''
   - ''
@@ -255,7 +255,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [3, 15]
@@ -265,7 +265,7 @@ combos:
   k: G
   l: ['0']
 - p: [19, 31]
-  k: {t: B, s: LEFT}
+  k: B
   l: ['0']
 - p: [36, 37]
   k: ','
@@ -279,7 +279,7 @@ combos:
 - p: [19, 20]
   k: ']'
   l: ['0']
-- p: [15, 16]
+- p: [40, 41]
   k: ''''
   l: ['1']
 - p: [3, 15]
