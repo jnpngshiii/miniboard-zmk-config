@@ -35,43 +35,43 @@
     // quick-release;
 };
 
-#define MAKE_HRM(                                         \
-    NAME ,                                                \
-    HOLD , TAP                                            \
-    )                                                     \
-    ZMK_BEHAVIOR(                                         \
-        NAME,                                             \
-        hold_tap,                                         \
-        flavor = "balanced";                              \
-        tapping-term-ms = <TAP_MS>;                       \
-        quick-tap-ms = <TAP_MS>;                          \
-        require-prior-idle-ms = <TAP_MS>;                 \
-        bindings = <HOLD>, <TAP>;                         \
+#define MAKE_HRM(                                            \
+    NAME ,                                                   \
+    HOLD , TAP                                               \
+    )                                                        \
+    ZMK_BEHAVIOR(                                            \
+        NAME,                                                \
+        hold_tap,                                            \
+        flavor = "balanced";                                 \
+        tapping-term-ms = <TAP_MS>;                          \
+        quick-tap-ms = <TAP_MS>;                             \
+        require-prior-idle-ms = <TAP_MS>;                    \
+        bindings = <HOLD>, <TAP>;                            \
     )
 MAKE_HRM(skm, &sk, &kp)
 
-#define SHIFT_KEY(                                        \
-    NAME       ,                                          \
-    TAP_ACT    , TAP    ,                                 \
-    SHIFT_ACT  , TAPTAP                                   \
-    )                                                     \
-    ZMK_BEHAVIOR(                                         \
-        NAME,                                             \
-        mod_morph,                                        \
-        bindings = <&TAP_ACT TAP> , <&SHIFT_ACT TAPTAP>;  \
-        mods = <(MOD_LCTL)>;                              \
+#define SHIFT_KEY(                                           \
+    NAME       ,                                             \
+    TAP_ACT    , TAP    ,                                    \
+    SHIFT_ACT  , SHIFT_TAP                                   \
+    )                                                        \
+    ZMK_BEHAVIOR(                                            \
+        NAME,                                                \
+        mod_morph,                                           \
+        bindings = <&TAP_ACT TAP> , <&SHIFT_ACT SHIFT_TAP>;  \
+        mods = <(MOD_LCTL)>;                                 \
     )
 
-#define TAP_TAP(                                          \
-    NAME       ,                                          \
-    TAP_ACT    , TAP    ,                                 \
-    TAPTAP_ACT , TAPTAP                                   \
-    )                                                     \
-    ZMK_BEHAVIOR(                                         \
-        NAME,                                             \
-        tap_dance,                                        \
-        tapping-term-ms = <TAP_MS>;                       \
-        bindings = <&TAP_ACT TAP> , <&TAPTAP_ACT TAPTAP>; \
+#define TAP_TAP(                                             \
+    NAME       ,                                             \
+    TAP_ACT    , TAP    ,                                    \
+    TAPTAP_ACT , TAPTAP                                      \
+    )                                                        \
+    ZMK_BEHAVIOR(                                            \
+        NAME,                                                \
+        tap_dance,                                           \
+        tapping-term-ms = <TAP_MS>;                          \
+        bindings = <&TAP_ACT TAP> , <&TAPTAP_ACT TAPTAP>;    \
     )
 
 //////////////////////////////
@@ -191,20 +191,25 @@ ZMK_LAYER(NUM,
 
 ////////////////////
 
+ZMK_BEHAVIOR(delete, mod_morph,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT)>;
+)
+
 ZMK_LAYER(FOO,
 //╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮                                 ╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮
-                     &kp PG_UP         K18               &kp END                                                                                                                 &kp TAB           K18               &kp UP               
+                                       &kp ESC           K18                                                                                                                     K18               &delete                                
 //├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤                                 ├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤
 //                                     NUY               NUY                                                                                                                     NUY               NUY
 //├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤                                 ├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤
-                     &skm LGUI HOME    &skm LALT PG_DN   &skm LCTRL ESC    &skm LSHFT RIGHT                                                                    &skm LSHFT LEFT   &skm LCTRL 0      &skm LALT 0       &skm LGUI ENTER      
+                     &skm LGUI TAB     &skm LALT HOME    &skm LCTRL END    &skm LSHFT PG_UP                                                                    &skm LSHFT UP     &skm LCTRL LEFT   &skm LALT RIGHT   &skm LGUI ENTER      
 //├─────────────┤   ╰─────────────┴───┴─────────────┴───┴─────────────┴───┼─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┼───┴─────────────┴───┴─────────────┴───┴─────────────╯   ├─────────────┤
 //                                                                         NUY                                                                                 NUY
 //├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤
-                                                                           K18                                                                                 &kp BSPC                                                                   
+                                                                           &kp PG_DN                                                                           &kp DOWN                                                                   
 //╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯   ╰─────────────╯                                 ╰─────────────╯   ╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯
 //                                                                        ╭─────────────┬───┬─────────────╮ ╭─────────────────────────────╮ ╭─────────────┬───┬─────────────╮
-                                                                           &trans            &trans                                          &kp DOWN          &trans
+                                                                           &trans            &trans                                          &trans            &trans
 //                                                                        ╰─────────────┴───┴─────────────╯ ╰─────────────────────────────╯ ╰─────────────┴───┴─────────────╯
 //                                                                                       NUY                                                               NUY
 )
@@ -257,12 +262,12 @@ ZMK_LAYER(BAR,
 ////////////////////
 
 // ZMK_COMBO(0           , &kp 0              , LT3 LM3 , FUN , COMBO_TERM)
-ZMK_COMBO(mute        , &kp C_MUTE         , LT2 LM2 , FUN , COMBO_TERM)
+// ZMK_COMBO(0           , &kp 0              , LT2 LM2 , FUN , COMBO_TERM)
 // ZMK_COMBO(0           , &kp 0              , RT2 RM2 , FUN , COMBO_TERM)
-// ZMK_COMBO(0           , &kp 0              , RT3 RM3 , FUN , COMBO_TERM)
+ZMK_COMBO(mute        , &kp C_MUTE         , RT3 RM3 , FUN , COMBO_TERM)
 
-ZMK_COMBO(pp          , &kp C_PP           , LM1 LB1 , FUN , COMBO_TERM)
-// ZMK_COMBO(0           , &kp 0              , RM1 RB1 , FUN , COMBO_TERM)
+// ZMK_COMBO(0           , &kp 0              , LM1 LB1 , FUN , COMBO_TERM)
+ZMK_COMBO(pp          , &kp C_PP           , RM1 RB1 , FUN , COMBO_TERM)
 
 // ZMK_COMBO(0           , &kp 0              , LH1 LH0 , FUN , COMBO_TERM)
 // ZMK_COMBO(0           , &kp 0              , RH0 RH1 , FUN , COMBO_TERM)
@@ -271,15 +276,15 @@ ZMK_COMBO(pp          , &kp C_PP           , LM1 LB1 , FUN , COMBO_TERM)
 
 ZMK_LAYER(FUN,
 //╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮                                 ╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮
-                                       &kp C_BRI_UP      &kp C_VOL_UP                                                                                                            K18               K18                                        
+                                       K18               K18                                                                                                                     &kp C_BRI_UP      &kp C_VOL_UP                           
 //├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤                                 ├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤
-//                                     NUY               C_MUTE                                                                                                                  NUY               NUY
+//                                     NUY               NUY                                                                                                                     NUY               C_MUTE       
 //├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤                                 ├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤
-                     K18               &kp C_BRI_DN      &kp C_VOL_DN      &kp C_NEXT                                                                          K18               K18               K18               &kp LG(LC(Q))        
+                     K18               K18               K18               K18                                                                                 &kp C_NEXT        &kp C_BRI_DN      &kp C_VOL_DN      &kp LG(LC(Q))        
 //├─────────────┤   ╰─────────────┴───┴─────────────┴───┴─────────────┴───┼─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┼───┴─────────────┴───┴─────────────┴───┴─────────────╯   ├─────────────┤
-//                                                                         C_PP                                                                                NUY
+//                                                                         NUY                                                                                 C_PP
 //├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤
-                                                                           &kp C_PREV                                                                          K18                                                                        
+                                                                           K18                                                                                 &kp C_PREV                                                                 
 //╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯   ╰─────────────╯                                 ╰─────────────╯   ╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯
 //                                                                        ╭─────────────┬───┬─────────────╮ ╭─────────────────────────────╮ ╭─────────────┬───┬─────────────╮
                                                                            &trans            &trans                                          &trans            &trans
