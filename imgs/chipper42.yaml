@@ -175,17 +175,17 @@ layers:
   - ''
   - ''
   - ESC
-  - ''
-  - ''
+  - TAB
   - ''
   - ''
   - ''
   - ''
   - {t: BSPC, s: DEL}
+  - ENTER
   - ''
   - ''
   - ''
-  - {t: TAB, h: LGUI}
+  - {t: '0', h: LGUI}
   - {t: HOME, h: LALT}
   - {t: END, h: LCTRL}
   - {t: PG UP, h: LSHFT}
@@ -194,7 +194,7 @@ layers:
   - {t: UP, h: LSHFT}
   - {t: LEFT, h: LCTRL}
   - {t: RIGHT, h: LALT}
-  - {t: ENTER, h: LGUI}
+  - {t: '0', h: LGUI}
   - ''
   - ''
   - ''
