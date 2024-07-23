@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.2.0...v0.2.1) (2024-07-23)
+
+
+### Features
+
+* rearrange layer `FOO` ([e91a5c0](https://github.com/jnpngshiii/miniboard-zmk-config/commit/e91a5c06506ee4202d6120e1b0c263b1516433e7))
+
 ## [0.2.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.1.5...v0.2.0) (2024-07-23)
 
 
