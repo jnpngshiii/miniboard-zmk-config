@@ -9,9 +9,6 @@ jobs:
   ####################
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      destination: 'artifact'
-      artifact_name: 'firmware'
   ####################
   # draw
   ####################
@@ -37,32 +34,9 @@ jobs:
       - draw
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Download build artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ needs.build.outputs.artifact_name }}
-          path: ${{ needs.build.outputs.destination }}
-      - name: Create Release
-        id: create_release
+      - name: init release-please
         uses: googleapis/release-please-action@v4
         with:
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
           token: ${{ secrets.PAT }}
-      - name: Upload Release Assets
-        if: ${{ steps.create_release.outputs.release_created }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
-        run: |
-          release_id=$(jq --raw-output .release.id "${{ steps.create_release.outputs.release_pr }}")
-          for file in firmware/*; do
-            curl -L \
-              -X POST \
-              -H "Accept: application/vnd.github+json" \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
-              -H "Content-Type: application/octet-stream" \
-              "https://uploads.github.com/repos/${{ github.repository }}/releases/$release_id/assets?name=$(basename $file)" \
-              --data-binary "@$file"
-          done
