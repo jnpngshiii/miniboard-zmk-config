@@ -9,6 +9,9 @@ jobs:
   ####################
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      destination: 'artifact'
+      artifact_name: 'firmware'
   ####################
   # draw
   ####################
@@ -39,8 +42,8 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: firmware
-          path: firmware
+          name: ${{ needs.build.outputs.artifact_name }}
+          path: ${{ needs.build.outputs.destination }}
       - name: Create Release
         id: create_release
         uses: googleapis/release-please-action@v4
