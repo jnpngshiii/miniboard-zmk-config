@@ -185,16 +185,16 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '0', h: LGUI}
-  - {t: HOME, h: LALT}
-  - {t: END, h: LCTRL}
-  - {t: PG UP, h: LSHFT}
+  - '0'
+  - HOME
+  - END
+  - PG UP
   - ''
   - ''
-  - {t: UP, h: LSHFT}
-  - {t: LEFT, h: LCTRL}
-  - {t: RIGHT, h: LALT}
-  - {t: '0', h: LGUI}
+  - UP
+  - LEFT
+  - RIGHT
+  - '0'
   - ''
   - ''
   - ''
