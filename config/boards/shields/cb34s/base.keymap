@@ -27,12 +27,12 @@
 #define SHORT_TAP_MS 165
 
 &sl {
-    release-after-ms = <2000>;
+    release-after-ms = <2500>;
     // quick-release;
 };
 
 &sk {
-    release-after-ms = <2000>;
+    release-after-ms = <2500>;
     // quick-release;
 };
 
@@ -49,7 +49,7 @@
         require-prior-idle-ms = <TAP_MS>;                    \
         bindings = <HOLD>, <TAP>;                            \
     )
-MAKE_HRM(hrm, &kp, &kp)
+MAKE_HRM(hrm, &sk, &kp)
 
 #define SHIFT_KEY(                                           \
     NAME       ,                                             \
