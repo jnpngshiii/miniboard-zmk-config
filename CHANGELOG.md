@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.0...v0.3.1) (2024-07-24)
+
+
+### Bug Fixes
+
+* test github ci ([3b808b1](https://github.com/jnpngshiii/miniboard-zmk-config/commit/3b808b1a67b6346c989e097da128c61013f84f9c))
+
 ## [0.3.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.2.1...v0.3.0) (2024-07-24)
 
 
