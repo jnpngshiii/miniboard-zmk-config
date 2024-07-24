@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.1...v0.4.2) (2024-07-24)
+
+
+### Features
+
+* **FOO:** fix a toggle bug ([0eeea32](https://github.com/jnpngshiii/miniboard-zmk-config/commit/0eeea32ac512c16da6db95105fdf417e2760744e))
+
 ## [0.4.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.0...v0.4.1) (2024-07-24)
 
 
