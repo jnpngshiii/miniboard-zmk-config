@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.0...v0.4.1) (2024-07-24)
+
+
+### Features
+
+* **FOO:** update layer `FOO` ([2232117](https://github.com/jnpngshiii/miniboard-zmk-config/commit/2232117ff59f2494c5abeb159e462f924788212d))
+
 ## [0.4.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.2...v0.4.0) (2024-07-24)
 
 
