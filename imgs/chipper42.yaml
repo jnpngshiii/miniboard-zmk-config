@@ -99,7 +99,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: '0', h: toggle}
   - Gui+Sft+ 7
   - {t: Gui+Sft+ 1, s: Gui+Sft+ 4}
   - Gui+ C
@@ -194,7 +194,7 @@ layers:
   - UP
   - LEFT
   - RIGHT
-  - {t: '6', h: toggle}
+  - ''
   - ''
   - ''
   - ''
@@ -314,7 +314,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: '6', h: toggle}
   - ''
   - ''
   - ''
