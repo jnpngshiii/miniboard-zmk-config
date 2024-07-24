@@ -374,20 +374,20 @@ ZMK_LAYER(BLU,
 ////////////////////
 
 // ZMK_COMBO(0           , &kp 0              , LT3 LM3 , LNX_DEF , COMBO_TERM)
-ZMK_COMBO(y           , &kp Y              , LT2 LM2 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_y       , &kp Y              , LT2 LM2 , LNX_DEF , COMBO_TERM)
 // ZMK_COMBO(0           , &kp 0              , RT2 RM2 , LNX_DEF , COMBO_TERM)
 // ZMK_COMBO(0           , &kp 0              , RT3 RM3 , LNX_DEF , COMBO_TERM)
 
-ZMK_COMBO(g           , &kp G              , LM1 LB1 , LNX_DEF , COMBO_TERM)
-ZMK_COMBO(b           , &kp B              , RM1 RB1 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_g       , &kp G              , LM1 LB1 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_b       , &kp B              , RM1 RB1 , LNX_DEF , COMBO_TERM)
 
-ZMK_COMBO(comma       , &kp COMMA          , LH1 LH0 , LNX_DEF , COMBO_TERM)
-ZMK_COMBO(dot         , &kp DOT            , RH0 RH1 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_comma   , &kp COMMA          , LH1 LH0 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_dot     , &kp DOT            , RH0 RH1 , LNX_DEF , COMBO_TERM)
 
 //////////
 
-ZMK_COMBO(lbkt        , &kp LBKT           , LM2 LM1 , LNX_DEF , COMBO_TERM)
-ZMK_COMBO(rbkt        , &kp RBKT           , RM1 RM2 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(lnx_lbkt    , &kp LBKT           , LM2 LM1 , LNX_DEF , COMBO_TERM)
+ZMK_COMBO(rlnx_bkt    , &kp RBKT           , RM1 RM2 , LNX_DEF , COMBO_TERM)
 
 ////////////////////
 
