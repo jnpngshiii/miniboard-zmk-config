@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.2.1...v0.3.0) (2024-07-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove `hrm` from layer `CTL`
+* remove skm
+
+### Features
+
+* rearrange layers ([7df9d64](https://github.com/jnpngshiii/miniboard-zmk-config/commit/7df9d64274b731e1bebeb371eb57e54f57e118e6))
+* remove `hrm` from layer `CTL` ([8d7797c](https://github.com/jnpngshiii/miniboard-zmk-config/commit/8d7797c035d13bb774774ec7f6e1ee6938d4929a))
+* remove skm ([1bcf20f](https://github.com/jnpngshiii/miniboard-zmk-config/commit/1bcf20f2f97aef3ca7798a7dde264f1c00f1ab94))
+* update layer `CTL` ([2b15d6a](https://github.com/jnpngshiii/miniboard-zmk-config/commit/2b15d6a4b0ed210ea431c7807d82946308d50999))
+
 ## [0.2.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.2.0...v0.2.1) (2024-07-23)
 
 
