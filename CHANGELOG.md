@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.4](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.3...v0.4.4) (2024-07-24)
+
+
+### Bug Fixes
+
+* fix a namespace bug ([2e16f8b](https://github.com/jnpngshiii/miniboard-zmk-config/commit/2e16f8b87c3d9ee3dcf4c8bdaa1a6d496da899b1))
+
 ## [0.4.3](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.2...v0.4.3) (2024-07-24)
 
 
