@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.2...v0.4.0) (2024-07-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* add sticky `hrm`
+
+### Features
+
+* add sticky `hrm` ([6b0372b](https://github.com/jnpngshiii/miniboard-zmk-config/commit/6b0372b48c059bce51e7c7b65039c200bbe32185))
+
 ## [0.3.2](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.1...v0.3.2) (2024-07-24)
 
 
