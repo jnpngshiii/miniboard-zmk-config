@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.1...v0.3.2) (2024-07-24)
+
+
+### Features
+
+* **LNX:** add layer `LNX` ([b33e9df](https://github.com/jnpngshiii/miniboard-zmk-config/commit/b33e9df22f8d5122b17804ab9a1a49ad79c9f685))
+
 ## [0.3.1](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.3.0...v0.3.1) (2024-07-24)
 
 
