@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.5](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.4...v0.4.5) (2024-07-25)
+
+
+### Features
+
+* **LNX_FOO:** update ([44fbe9d](https://github.com/jnpngshiii/miniboard-zmk-config/commit/44fbe9dc7636946bf3a9fed4907d8da2413c65c9))
+
 ## [0.4.4](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.3...v0.4.4) (2024-07-24)
 
 
