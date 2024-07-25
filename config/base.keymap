@@ -194,15 +194,15 @@ ZMK_BEHAVIOR(win_cptr, mod_morph,
 #define RECORD   &kp LG(LS(N7))
 #define OCR      &kp LG(LS(N6))
 
+#define LANG     &kp LC(SPACE)
+#define FIND     &kp LG(SPACE)
+
 #define COPY     &kp LG(C)
 #define CUT      &kp LG(X)
 #define YANK     &kp LG(V)
 
 #define UNDO     &kp LG(Z)
 #define REDO     &kp LG(LS(Z))
-
-#define LANG     &kp LC(SPACE)
-#define FIND     &kp LG(SPACE)
 
 ////////////////////
 // combos
@@ -411,6 +411,35 @@ ZMK_LAYER(LNX_DEF,
 // LNX_FOO
 //////////////////////////////
 
+//                    Capture
+// +shift = Scrolling Capture
+ZMK_BEHAVIOR(lnx_cptr, mod_morph,
+    bindings = <&kp 0>, <&kp 0>;
+    mods = <(MOD_LSFT)>;
+)
+
+//             Win Capture
+// +shift = Screen Capture
+ZMK_BEHAVIOR(lnx_win_cptr, mod_morph,
+    bindings = <&kp 0>, <&kp 0>;
+    mods = <(MOD_LSFT)>;
+)
+
+#define LNX_CPTR     &cptr
+#define LNX_WIN_CPTR &win_cptr
+#define LNX_RECORD   &kp 0
+#define LNX_OCR      &kp 0
+
+#define LNX_LANG     &kp 0
+#define LNX_FIND     &kp 0
+
+#define LNX_COPY     &kp C_AC_COPY
+#define LNX_CUT      &kp C_AC_CUT
+#define LNX_YANK     &kp C_AC_PASTE
+
+#define LNX_UNDO     &kp C_AC_UNDO
+#define LNX_REDO     &kp C_AC_REDO
+
 ////////////////////
 // combos
 ////////////////////
@@ -430,18 +459,18 @@ ZMK_LAYER(LNX_DEF,
 
 ZMK_LAYER(LNX_FOO,
 //╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮                                 ╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮
-   K42               K22               K18               K18               K22               K34                                             K34               K22               K18               K18               K22               K42
+   K42               K22               LNX_OCR           LNX_WIN_CPTR      K22               K34                                             K34               K22               K18               K18               K22               K42
 //├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤                                 ├─────────────┤   ╰─────────────╯   ├─────────────┼───┼─────────────┤   ╰─────────────╯   ├─────────────┤
 //                                     NUY               NUY                                                                                                                     NUY               NUY
 //├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤                                 ├─────────────┤   ╭─────────────┬───┼─────────────┼───┼─────────────┼───┬─────────────╮   ├─────────────┤
-   K42               &tog LNX_DEF      K18               K18               K18               K34                                             K34               K18               K18               K18               K18               K42
+   K42               &tog LNX_DEF      LNX_RECORD        LNX_CPTR          LNX_COPY          K34                                             K34               LNX_UNDO          K18               K18               K18               K42
 //├─────────────┤   ╰─────────────┴───┴─────────────┴───┴─────────────┴───┼─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┼───┴─────────────┴───┴─────────────┴───┴─────────────╯   ├─────────────┤
-//                                                                         NUY                                                                                 NUY
+//                                                                         LNX_CUT                                                                             NUY
 //├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤   ├─────────────┤                                 ├─────────────┤   ├─────────────┤   ╭─────────────┬───┬─────────────┬───┬─────────────╮   ├─────────────┤
-   K42               K28               K28               K28               K18               K34                                             K34               K18               K28               K28               K28               K42
+   K42               K28               K28               K28               LNX_YANK          K34                                             K34               LNX_REDO          K28               K28               K28               K42
 //╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯   ╰─────────────╯                                 ╰─────────────╯   ╰─────────────╯   ╰─────────────┴───┴─────────────┴───┴─────────────╯   ╰─────────────╯
 //                                                                        ╭─────────────┬───┬─────────────╮ ╭─────────────────────────────╮ ╭─────────────┬───┬─────────────╮
-                                                                           &trans            &trans          K42                       K42   &trans            &trans
+                                                                           &trans            &trans          K42                       K42   LNX_LANG          LNX_FIND
 //                                                                        ╰─────────────┴───┴─────────────╯ ╰─────────────────────────────╯ ╰─────────────┴───┴─────────────╯
 //                                                                                       NUY                                                               NUY
 )

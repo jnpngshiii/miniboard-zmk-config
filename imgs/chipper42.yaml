@@ -303,8 +303,8 @@ layers:
   '7':
   - ''
   - ''
-  - ''
-  - ''
+  - '0'
+  - {t: Gui+Sft+ 3, s: Gui+Sft+ 2}
   - ''
   - ''
   - ''
@@ -315,6 +315,12 @@ layers:
   - ''
   - ''
   - {t: '6', h: toggle}
+  - '0'
+  - {t: Gui+Sft+ 1, s: Gui+Sft+ 4}
+  - AC COPY
+  - ''
+  - ''
+  - AC UNDO
   - ''
   - ''
   - ''
@@ -323,16 +329,10 @@ layers:
   - ''
   - ''
   - ''
+  - AC PASTE
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - AC REDO
   - ''
   - ''
   - ''
@@ -341,8 +341,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
+  - '0'
 combos:
 - p: [3, 15]
   k: Y

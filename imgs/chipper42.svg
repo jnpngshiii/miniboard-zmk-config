@@ -1318,9 +1318,14 @@ path.combo {
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em" style="font-size: 88%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">3</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">Gui+Sft+ 2</tspan></text>
 </g>
 <g transform="translate(252, 35)" class="key ghost keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
@@ -1356,12 +1361,20 @@ path.combo {
 </g>
 <g transform="translate(140, 91)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em" style="font-size: 88%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">Gui+Sft+ 4</tspan></text>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AC</tspan><tspan x="0" dy="1.2em">COPY</tspan>
+</text>
 </g>
 <g transform="translate(308, 98)" class="key ghost keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
@@ -1371,6 +1384,9 @@ path.combo {
 </g>
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AC</tspan><tspan x="0" dy="1.2em">UNDO</tspan>
+</text>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1398,6 +1414,9 @@ path.combo {
 </g>
 <g transform="translate(252, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AC</tspan><tspan x="0" dy="1.2em">PASTE</tspan>
+</text>
 </g>
 <g transform="translate(308, 154)" class="key ghost keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
@@ -1407,6 +1426,9 @@ path.combo {
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">AC</tspan><tspan x="0" dy="1.2em">REDO</tspan>
+</text>
 </g>
 <g transform="translate(644, 140)" class="key ghost keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key ghost"/>
@@ -1433,13 +1455,13 @@ path.combo {
 <g transform="translate(489, 224) rotate(-30.0)" class="key ghost keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key ghost"/>
 </g>
-<g transform="translate(554, 213) rotate(-15.0)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
 </g>
-<g transform="translate(616, 205)" class="key trans keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(616, 205)" class="key keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
 </g>
 </g>
 </g>
