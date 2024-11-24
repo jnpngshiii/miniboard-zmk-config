@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.0](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.5...v0.5.0) (2024-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* 18 -> 34
+* update `FOO` layer
+* update `hjkl`
+* remove `LNX` layers
+
+### Features
+
+* 18 -&gt; 34 ([ec9eeff](https://github.com/jnpngshiii/miniboard-zmk-config/commit/ec9eeff291ab5c294fbdf161d71fd294b4c00136))
+* remove `LNX` layers ([73902df](https://github.com/jnpngshiii/miniboard-zmk-config/commit/73902df130036cc18cea0cdc4d2bdc73b7ee2d0d))
+* remove `TAP_TAP` ([b61bb28](https://github.com/jnpngshiii/miniboard-zmk-config/commit/b61bb285e6e8d43ba7d48da5d7d66924ae90f84a))
+* update `FOO` layer ([6c57876](https://github.com/jnpngshiii/miniboard-zmk-config/commit/6c578764bde085862473f31e9d52a32eb2ff3a14))
+* update `hjkl` ([6635f32](https://github.com/jnpngshiii/miniboard-zmk-config/commit/6635f32cc81f906acdd470b75989792c4427dd90))
+
 ## [0.4.5](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.4.4...v0.4.5) (2024-07-25)
 
 
