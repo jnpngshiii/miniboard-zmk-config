@@ -61,18 +61,6 @@ MAKE_HRM(hrm, &sk, &kp)
         mods = <(MOD_LCTL)>;                                 \
     )
 
-#define TAP_TAP(                                             \
-    NAME       ,                                             \
-    TAP_ACT    , TAP    ,                                    \
-    TAPTAP_ACT , TAPTAP                                      \
-    )                                                        \
-    ZMK_BEHAVIOR(                                            \
-        NAME,                                                \
-        tap_dance,                                           \
-        tapping-term-ms = <TAP_MS>;                          \
-        bindings = <&TAP_ACT TAP> , <&TAPTAP_ACT TAPTAP>;    \
-    )
-
 //////////////////////////////
 // Layer Definition
 //////////////////////////////
