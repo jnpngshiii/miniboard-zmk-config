@@ -84,7 +84,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''''
+  - {t: ▽, type: trans}
   '2':
   - ''
   - ''
@@ -99,7 +99,7 @@ layers:
   - ''
   - ''
   - ''
-  - '0'
+  - ''
   - Gui+Sft+ 7
   - {t: Gui+Sft+ 1, s: Gui+Sft+ 4}
   - ''
