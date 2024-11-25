@@ -257,3 +257,10 @@ layers:
   - ''
   - {type: held}
   - {t: ▽, type: trans}
+combos:
+- p: [36, 37]
+  k: B
+  l: ['0']
+- p: [40, 41]
+  k: ','
+  l: ['0']

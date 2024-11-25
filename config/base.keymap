@@ -53,6 +53,9 @@ MAKE_HRM(hrm, &kp, &kp)
 // DEF
 //////////////////////////////
 
+ZMK_COMBO(comma       , &kp B              , LH1 LH0 , DEF , COMBO_TERM)
+ZMK_COMBO(dot         , &kp COMMA          , RH0 RH1 , DEF , COMBO_TERM)
+
 ZMK_LAYER(DEF,
 //╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮                                 ╭─────────────╮   ╭─────────────╮   ╭─────────────┬───┬─────────────╮   ╭─────────────╮   ╭─────────────╮
    K42               &kp Q             &kp W             &kp E             &kp R             &kp T                                           &kp Y             &kp U             &kp I             &kp O             &kp P             K42
